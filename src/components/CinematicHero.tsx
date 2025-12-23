@@ -54,10 +54,6 @@ const CinematicHero = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
   }
 
-  const goToNext = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length)
-  }
-
   return (
     <section className="cinematic-hero dark-section" ref={ref}>
       <motion.div className="hero-background-cinematic" style={{ y }}>
