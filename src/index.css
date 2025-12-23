@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Brixnet Brand Colors */
+  --primary-blue: #1e3a8a;
+  --secondary-blue: #3b82f6;
+  --accent-orange: #f97316;
+  --dark-navy: #0f172a;
+  --charcoal: #1e293b;
+  --white: #FFFFFF;
+  --light-bg: #f8fafc;
+  --warm-gray: #64748b;
+  --sand: #e2e8f0;
+  --light-gray: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --border-color: #cbd5e1;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-primary);
+  background: var(--light-bg);
+  overflow-x: hidden;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Smooth cursor */
+* {
+  cursor: none;
+}
+
+a, button {
+  cursor: none;
+}
+
+/* Custom Scrollbar - Default (for light backgrounds) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-blue);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-blue);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-blue) transparent;
+}
+
+/* Dark background sections - orange scrollbar */
+.dark-section {
+  scrollbar-color: var(--accent-orange) transparent;
+}
+
+.dark-section::-webkit-scrollbar-thumb {
+  background: var(--accent-orange);
+}
+
+.dark-section::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-blue);
+}
+

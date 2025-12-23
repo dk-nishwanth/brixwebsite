@@ -1,0 +1,39 @@
+.image-reveal-container {
+  position: relative;
+  height: 400vh;
+  background: var(--primary);
+}
+
+.reveal-image {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform, opacity;
+}
+
+.reveal-image-content {
+  width: 80%;
+  max-width: 1200px;
+  height: 70vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .reveal-image-content {
+    width: 90%;
+    height: 60vh;
+    font-size: 32px;
+  }
+}

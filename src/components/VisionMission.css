@@ -1,0 +1,29 @@
+.vision-mission {
+  background: var(--light-gray);
+}
+
+.vm-block {
+  padding: 60px 40px;
+  background: var(--white);
+  border-left: 4px solid var(--warm-gray);
+}
+
+.vm-title {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 300;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.vm-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 1024px) {
+  .vm-block {
+    padding: 40px 32px;
+  }
+}
