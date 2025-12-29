@@ -1,6 +1,6 @@
 import React from 'react'
 import './Logo.css'
-import brixLogo from '../assets/BRIX NEW.png'
+import brixLogo from '../assets/brix-logo.png'
 
 interface LogoProps {
   className?: string
