@@ -27,13 +27,16 @@
 .project-image-inner {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  color: rgba(255, 255, 255, 0.1);
-  letter-spacing: 0.2em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
 }
 
 .project-overlay-editorial {
@@ -42,17 +45,18 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(196, 181, 160, 0.9);
+  background: linear-gradient(135deg, rgba(27, 154, 170, 0.9) 0%, rgba(45, 125, 125, 0.8) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  border-radius: 8px;
 }
 
 .view-project-text {
   font-size: 14px;
   letter-spacing: 0.2em;
-  color: var(--charcoal);
+  color: var(--white);
   font-weight: 600;
   text-transform: uppercase;
 }

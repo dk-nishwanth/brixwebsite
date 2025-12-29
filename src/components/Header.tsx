@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import Logo from './Logo'
 import './Header.css'
 
 interface HeaderProps {
@@ -24,8 +25,8 @@ const Header = ({ scrolled }: HeaderProps) => {
     <header className={`header ${scrolled || !isHomePage ? 'scrolled' : ''}`}>
       <div className="container">
         <nav className="nav">
-          <Link to="/" className="logo">
-            BRIXNET
+          <Link to="/" className="logo-link">
+            <Logo size="small" />
           </Link>
 
           <ul className={`nav-menu ${menuOpen ? 'open' : ''}`}>

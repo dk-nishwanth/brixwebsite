@@ -12,14 +12,14 @@ const Alliance = () => {
       title: 'Transformational Leadership',
       description:
         'A leader in delivering noetic science, bringing the globe into a transformational vector. Time and energy are the primitive by-product of active learning and then it moves towards orderliness which is essential for brewing IQ, enabling this aspect through a profound technique spreads fragrance to our personality, enjoy the transformation by witnessing the delta, enabling this to the millennials to mitigate and overcome frictions in life is what we devote to deliver.',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80',
     },
     {
       name: 'SNA',
       title: 'Savant Networks Academy',
       description:
         'Savant Networks Academy a lineage of BRIX Networks (P) Ltd to foster Industry-Academia touch through our unique ECOSYSTEM and DNA CULTURE.',
-      image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80',
     },
   ]
 

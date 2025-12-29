@@ -11,7 +11,8 @@
 }
 
 .service-item-editorial {
-  display: flex;
+  display: grid;
+  grid-template-columns: 300px 1fr;
   gap: 60px;
   padding: 60px 0;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
@@ -19,15 +20,50 @@
 }
 
 .service-item-editorial:hover {
-  opacity: 0.7;
+  opacity: 0.9;
+}
+
+.service-image-editorial {
+  position: relative;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.service-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.service-item-editorial:hover .service-img {
+  transform: scale(1.05);
+}
+
+.service-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(27, 154, 170, 0.9) 0%, rgba(45, 125, 125, 0.8) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.service-item-editorial:hover .service-image-overlay {
+  opacity: 1;
 }
 
 .service-number {
-  font-size: 14px;
+  font-size: 24px;
   letter-spacing: 0.2em;
-  color: var(--warm-gray);
-  font-weight: 600;
-  min-width: 60px;
+  color: var(--white);
+  font-weight: 700;
 }
 
 .service-content-editorial {
@@ -35,10 +71,11 @@
 }
 
 .service-title-editorial {
-  font-size: clamp(32px, 4vw, 48px);
-  font-weight: 300;
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 700;
   margin-bottom: 16px;
   letter-spacing: -0.02em;
+  color: var(--primary-teal);
 }
 
 .service-description-editorial {
@@ -72,17 +109,33 @@
 }
 
 .read-more-link:hover {
-  color: var(--charcoal);
+  color: var(--primary-teal);
 }
 
 .read-more-link:hover::after {
   width: 100%;
+  background: var(--primary-teal);
+}
+
+@media (max-width: 1024px) {
+  .service-item-editorial {
+    grid-template-columns: 250px 1fr;
+    gap: 40px;
+  }
+  
+  .service-image-editorial {
+    height: 150px;
+  }
 }
 
 @media (max-width: 768px) {
   .service-item-editorial {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 24px;
     padding: 40px 0;
+  }
+  
+  .service-image-editorial {
+    height: 200px;
   }
 }

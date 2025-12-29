@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useState } from 'react'
+import SEO from '../components/SEO'
 import './About.css'
 
 const About = () => {
@@ -81,6 +82,12 @@ const About = () => {
 
   return (
     <div className="about-page">
+      <SEO 
+        title="About Us - BRiX Network | Knowledge Transfer Experts"
+        description="Learn about BRiX Network Pvt Ltd, established in 2014 as a leading Knowledge Transfer Organization and Authorized Training Partner of Extreme Networks across India."
+        keywords="about BRiX Network, knowledge transfer organization, corporate training company, Extreme Networks partner, Bangalore training company"
+        url="https://www.brixnet.in/about"
+      />
       {/* Hero Section */}
       <section className="about-hero">
         <div className="container">
@@ -127,8 +134,8 @@ const About = () => {
             >
               <div className="image-placeholder">
                 <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
-                  alt="Team collaboration"
+                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80"
+                  alt="Modern Indian corporate office workspace"
                 />
               </div>
             </motion.div>

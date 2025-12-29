@@ -4,7 +4,7 @@
 
 .career-hero {
   padding: 120px 0 80px;
-  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-navy) 100%);
+  background: linear-gradient(135deg, var(--primary-teal) 0%, var(--dark-teal) 100%);
   text-align: center;
   color: var(--white);
 }
@@ -19,7 +19,7 @@
 .hero-subtitle {
   font-size: clamp(20px, 3vw, 32px);
   font-weight: 400;
-  color: var(--accent-orange);
+  color: var(--accent-red);
   letter-spacing: 0.1em;
 }
 
@@ -107,7 +107,7 @@
 .job-icon {
   font-size: 32px;
   font-weight: 300;
-  color: var(--accent-orange);
+  color: var(--accent-red);
 }
 
 .job-content {
@@ -129,7 +129,7 @@
 .job-detail h4 {
   font-size: 16px;
   font-weight: 600;
-  color: var(--primary-blue);
+  color: var(--primary-teal);
   margin-bottom: 8px;
 }
 
@@ -196,7 +196,7 @@
 .form-group input:focus,
 .form-group select:focus {
   outline: none;
-  border-color: var(--primary-blue);
+  border-color: var(--primary-teal);
 }
 
 .file-info {
@@ -207,7 +207,7 @@
 
 .submit-btn-career {
   padding: 18px 48px;
-  background: var(--primary-blue);
+  background: var(--primary-teal);
   color: var(--white);
   border: none;
   font-size: 14px;
@@ -220,9 +220,9 @@
 }
 
 .submit-btn-career:hover {
-  background: var(--accent-orange);
+  background: var(--accent-red);
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(30, 58, 138, 0.3);
+  box-shadow: 0 10px 30px rgba(27, 154, 170, 0.3);
 }
 
 @media (max-width: 768px) {

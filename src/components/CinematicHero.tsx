@@ -12,31 +12,43 @@ const CinematicHero = () => {
   const y = useTransform(scrollYProgress, [0, 1], ['0%', '30%'])
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.5, 0])
 
-  // Carousel slides with images and content
+  // Carousel slides with tech/software company focused images and content
   const slides = [
+    {
+      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80',
+      label: 'BRIXNET',
+      title: 'Professional Excellence',
+      subtitle: 'Fostering innovation and professional service delivery in modern workspaces',
+    },
     {
       image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80',
       label: 'BRIXNET',
       title: 'Delivering TRUST',
-      subtitle: 'Your Preferred Knowledge Transfer Partner',
-    },
-    {
-      image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1920&q=80',
-      label: 'BRIXNET',
-      title: 'A Pure Play Knowledge Transfer Organization',
-      subtitle: 'Enabling excellence at each level, process and service delivery',
-    },
-    {
-      image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1920&q=80',
-      label: 'BRIXNET',
-      title: 'Unleash thy creativity within',
-      subtitle: 'Fostering innovation and professional service delivery',
+      subtitle: 'Your Preferred Knowledge Transfer Partner in Technology Excellence',
     },
     {
       image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1920&q=80',
       label: 'BRIXNET',
-      title: 'Enabling young minds with lasting efficiency',
-      subtitle: 'Premium Knowledge Transfer, innovation and excellence',
+      title: 'Technology Innovation Hub',
+      subtitle: 'Enabling excellence through cutting-edge software solutions and training',
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1920&q=80',
+      label: 'BRIXNET',
+      title: 'Software Development Excellence',
+      subtitle: 'Premium Knowledge Transfer for software engineering and development teams',
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1920&q=80',
+      label: 'BRIXNET',
+      title: 'Modern Workspace Solutions',
+      subtitle: 'Enabling young minds with lasting efficiency through technology and innovation',
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&q=80',
+      label: 'BRIXNET',
+      title: 'Startup & Enterprise Ready',
+      subtitle: 'Scalable knowledge transfer solutions for growing technology companies',
     },
   ]
 

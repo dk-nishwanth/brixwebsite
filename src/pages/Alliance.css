@@ -88,10 +88,16 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(30, 58, 138, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(27, 154, 170, 0.9) 0%, rgba(45, 125, 125, 0.8) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.partner-card:hover .partner-overlay {
+  opacity: 1;
 }
 
 .partner-overlay h2 {
@@ -140,7 +146,7 @@
 .alliance-cta .cta-button {
   display: inline-block;
   padding: 18px 48px;
-  background: var(--primary-blue);
+  background: var(--primary-teal);
   color: var(--white);
   text-decoration: none;
   font-size: 14px;
@@ -151,9 +157,9 @@
 }
 
 .alliance-cta .cta-button:hover {
-  background: var(--accent-orange);
+  background: var(--accent-red);
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(30, 58, 138, 0.3);
+  box-shadow: 0 10px 30px rgba(27, 154, 170, 0.3);
 }
 
 /* Responsive */

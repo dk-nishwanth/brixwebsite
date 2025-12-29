@@ -11,24 +11,32 @@ const EditorialServices = () => {
       title: 'Advance Technology Domain',
       description:
         'Premium knowledge transfer on advance technology, enablement programs, vendor neutral programs, OEM enablement & certification programs, CLOUD, SDx, Infrastructure automation tools, learning & development domain',
+      image: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&q=80',
+      alt: 'Advanced cloud technology and digital infrastructure'
     },
     {
       number: '02',
       title: 'Learning & Development Domain',
       description:
         'Enabling potential minds and its creativity through fostering programs on noetic science, leadership & management, coaching, business skills, behavioural skills and cross culture',
+      image: 'https://images.unsplash.com/photo-1570126618953-d437176e8c79?w=600&q=80',
+      alt: 'Professional learning and development workshop'
     },
     {
       number: '03',
       title: 'Domain Compliances & Governance',
       description:
         'To validate "RESKILL TO STAY RELEVANT" in the evolving world of applied science, we render services for project management and expert, ITIL-SERIES, JIRA Project management, CEM, CISA, CISM, CISSP, certified data centre professional and specialist and certified IT management',
+      image: 'https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=600&q=80',
+      alt: 'Compliance documentation and governance frameworks'
     },
     {
       number: '04',
       title: 'Professional Service Domain',
       description:
         'The magnitude maximizes to render services on Infosec, VA/PT, mobile security scanning and reporting, baseline auditing, IT infrastructure auditing, readiness auditing, comprehensive auditing, knowledge management services, project management & implementation program',
+      image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=600&q=80',
+      alt: 'Professional IT security and consulting services'
     },
   ]
 
@@ -54,7 +62,16 @@ const EditorialServices = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 1, delay: index * 0.15, ease: [0.22, 1, 0.36, 1] }}
             >
-              <span className="service-number">{service.number}</span>
+              <div className="service-image-editorial">
+                <img 
+                  src={service.image} 
+                  alt={service.alt}
+                  className="service-img"
+                />
+                <div className="service-image-overlay">
+                  <span className="service-number">{service.number}</span>
+                </div>
+              </div>
               <div className="service-content-editorial">
                 <h3 className="service-title-editorial">{service.title}</h3>
                 <p className="service-description-editorial">{service.description}</p>

@@ -32,7 +32,7 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          Get in Touch
+          Connect With Us
         </motion.h2>
 
         <motion.div
@@ -42,41 +42,70 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-group">
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
+          <div className="contact-layout-section">
+            <div className="contact-info-quick">
+              <h3>Get in Touch</h3>
+              <div className="contact-details-quick">
+                <div className="contact-item">
+                  <span className="contact-icon">📧</span>
+                  <div>
+                    <strong>Email</strong>
+                    <p>info@brixnet.in</p>
+                  </div>
+                </div>
+                <div className="contact-item">
+                  <span className="contact-icon">📞</span>
+                  <div>
+                    <strong>Phone</strong>
+                    <p>+91 80 4131 0000</p>
+                  </div>
+                </div>
+                <div className="contact-item">
+                  <span className="contact-icon">📍</span>
+                  <div>
+                    <strong>Location</strong>
+                    <p>Bangalore, Karnataka</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="form-group">
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <textarea
-                name="message"
-                placeholder="Message"
-                rows={6}
-                value={formData.message}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <button type="submit" className="submit-btn">
-              Send Message
-            </button>
-          </form>
+            
+            <form className="contact-form" onSubmit={handleSubmit}>
+              <div className="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  rows={6}
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <button type="submit" className="submit-btn">
+                Send Message
+              </button>
+            </form>
+          </div>
         </motion.div>
       </div>
     </section>

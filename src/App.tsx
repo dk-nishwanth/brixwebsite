@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import CustomCursor from './components/CustomCursor'
+import ScrollToTop from './components/ScrollToTop'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
@@ -25,6 +26,7 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <ScrollToTop />
         <CustomCursor />
         <Header scrolled={scrolled} />
         <Routes>

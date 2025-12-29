@@ -1,0 +1,113 @@
+.happy-clients-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+  width: 100%;
+  overflow: hidden;
+}
+
+.clients-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-header-clients {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header-clients h2 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.title-underline {
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary);
+  margin: 0 auto;
+}
+
+/* Carousel Layout */
+.clients-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.carousel-track-container {
+  flex: 1;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.carousel-track {
+  display: flex;
+  align-items: center;
+}
+
+.client-slide {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.client-logo-wrapper {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.client-logo-wrapper img {
+  max-width: 100%;
+  max-height: 80px; /* Limits height so they look uniform */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.4s ease;
+}
+
+.client-logo-wrapper:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Navigation Buttons */
+.carousel-arrow {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #555;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.carousel-arrow:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+  .section-header-clients h2 {
+    font-size: 1.8rem;
+  }
+  
+  .client-logo-wrapper {
+    height: 80px;
+  }
+}

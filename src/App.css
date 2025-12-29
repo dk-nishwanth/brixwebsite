@@ -19,11 +19,11 @@
 
 .section-title {
   font-size: clamp(48px, 6vw, 72px);
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
   margin-bottom: 24px;
-  color: var(--text-primary);
+  color: var(--primary-teal);
 }
 
 .section-subtitle {
@@ -37,10 +37,11 @@
 
 .editorial-title {
   font-size: clamp(48px, 6vw, 96px);
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.03em;
   margin-bottom: 32px;
+  color: var(--primary-teal);
 }
 
 .editorial-subtitle {
@@ -55,7 +56,7 @@
   font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--accent-orange);
+  color: var(--accent-red);
   font-weight: 600;
   margin-bottom: 24px;
   display: block;

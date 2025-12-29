@@ -43,7 +43,14 @@ const EditorialAbout = () => {
             transition={{ duration: 1.5, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           >
             <div className="editorial-image">
-              <span>KNOWLEDGE TRANSFER</span>
+              <img 
+                src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=800&q=80" 
+                alt="Modern Indian corporate office and knowledge transfer organization"
+                className="editorial-img"
+              />
+              <div className="image-overlay">
+                <span>KNOWLEDGE TRANSFER</span>
+              </div>
             </div>
           </motion.div>
         </div>

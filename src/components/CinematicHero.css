@@ -51,7 +51,7 @@
 .hero-label-cinematic {
   font-size: 11px;
   letter-spacing: 0.3em;
-  color: var(--accent-orange);
+  color: var(--accent-red);
   font-weight: 600;
   margin-bottom: 32px;
   display: block;
@@ -85,7 +85,7 @@
 .hero-read-more {
   display: inline-block;
   padding: 16px 40px;
-  background: var(--accent-orange);
+  background: var(--accent-red);
   color: var(--white);
   text-decoration: none;
   font-size: 14px;
@@ -96,9 +96,9 @@
 }
 
 .hero-read-more:hover {
-  background: var(--secondary-blue);
+  background: var(--secondary-teal);
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.4);
+  box-shadow: 0 10px 30px rgba(229, 62, 62, 0.4);
 }
 
 .hero-nav-btn {
@@ -146,7 +146,7 @@
 }
 
 .indicator-dot.active {
-  background: var(--accent-orange);
+  background: var(--accent-red);
   width: 30px;
   border-radius: 5px;
 }
@@ -176,7 +176,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: var(--accent-orange);
+  background: var(--accent-red);
   animation: scrollLineAnimation 2s ease-in-out infinite;
 }
 

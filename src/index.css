@@ -5,20 +5,32 @@
 }
 
 :root {
-  /* Brixnet Brand Colors */
-  --primary-blue: #1e3a8a;
-  --secondary-blue: #3b82f6;
-  --accent-orange: #f97316;
-  --dark-navy: #0f172a;
-  --charcoal: #1e293b;
+  /* BRIX Network Brand Colors - Matching brixnet.in website */
+  --primary-teal: #1B9AAA;
+  --secondary-teal: #2BB0C1;
+  --accent-red: #E53E3E;
+  --dark-teal: #147A87;
+  --charcoal: #2D3748;
   --white: #FFFFFF;
-  --light-bg: #f8fafc;
-  --warm-gray: #64748b;
-  --sand: #e2e8f0;
-  --light-gray: #f1f5f9;
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --border-color: #cbd5e1;
+  --light-bg: #F7FAFC;
+  --warm-gray: #718096;
+  --sand: #E2E8F0;
+  --light-gray: #F1F5F9;
+  --text-primary: #2D3748;
+  --text-secondary: #718096;
+  --text-light: #718096;
+  --text: #2D3748;
+  --border-color: #CBD5E0;
+  --light: #F7FAFC;
+  --secondary: var(--secondary-teal);
+  
+  /* Legacy support - map old variables to new ones */
+  --primary-blue: var(--primary-teal);
+  --secondary-blue: var(--secondary-teal);
+  --accent-orange: var(--accent-red);
+  --dark-navy: var(--dark-teal);
+  --accent: var(--accent-red);
+  --primary: var(--primary-teal);
 }
 
 body {
@@ -41,7 +53,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.1;
 }
@@ -79,30 +91,30 @@ a, button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-blue);
+  background: var(--primary-teal);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary-blue);
+  background: var(--secondary-teal);
 }
 
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--primary-blue) transparent;
+  scrollbar-color: var(--primary-teal) transparent;
 }
 
-/* Dark background sections - orange scrollbar */
+/* Dark background sections - red scrollbar */
 .dark-section {
-  scrollbar-color: var(--accent-orange) transparent;
+  scrollbar-color: var(--accent-red) transparent;
 }
 
 .dark-section::-webkit-scrollbar-thumb {
-  background: var(--accent-orange);
+  background: var(--accent-red);
 }
 
 .dark-section::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary-blue);
+  background: var(--secondary-teal);
 }
 
