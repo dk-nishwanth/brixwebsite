@@ -10,11 +10,12 @@
 }
 
 .page-title {
+  font-family: var(--font-bitsumishi);
   font-size: clamp(42px, 5vw, 64px);
-  font-weight: 300;
+  font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 24px;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   line-height: 1.1;
 }
 

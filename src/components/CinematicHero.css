@@ -49,21 +49,24 @@
 }
 
 .hero-label-cinematic {
+  font-family: var(--font-agency);
   font-size: 11px;
   letter-spacing: 0.3em;
   color: var(--accent-red);
   font-weight: 600;
   margin-bottom: 32px;
   display: block;
+  text-transform: uppercase;
 }
 
 .hero-title-cinematic {
+  font-family: var(--font-bitsumishi);
   font-size: clamp(64px, 8vw, 120px);
-  font-weight: 300;
+  font-weight: 700;
   color: var(--white);
   line-height: 0.95;
   margin-bottom: 40px;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.02em;
 }
 
 .hero-subtitle-cinematic {
@@ -88,6 +91,7 @@
   background: var(--accent-red);
   color: var(--white);
   text-decoration: none;
+  font-family: var(--font-agency);
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.1em;
