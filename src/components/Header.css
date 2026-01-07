@@ -11,7 +11,7 @@
 }
 
 .header .container {
-  padding-left: 0px;
+  padding-left: 5px;
   padding-right: 20px;
 }
 
@@ -32,7 +32,7 @@
 
 .logo-link {
   position: relative;
-  left: -200px;
+  left: -100px;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -114,13 +114,43 @@
   transform: rotate(-45deg) translate(4px, -4px);
 }
 
+/* Desktop-specific left corner positioning */
+@media (min-width: 1441px) {
+  .logo-link {
+    left: -120px;
+  }
+  
+  .header .container {
+    padding-left: 0px;
+  }
+}
+
+/* Laptop-specific adjustments */
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .logo-link {
+    left: -15px;
+  }
+}
+
+@media (max-width: 1366px) and (min-width: 1025px) {
+  .logo-link {
+    left: -12px;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .logo-link {
+    left: -10px;
+  }
+}
+
 @media (max-width: 1024px) {
   .menu-toggle {
     display: flex;
   }
 
   .logo-link {
-    left: -150px;
+    left: -8px;
   }
 
   .nav-menu {
@@ -156,7 +186,7 @@
   }
   
   .logo-link {
-    left: -120px;
+    left: -5px;
   }
 }
 
@@ -167,7 +197,7 @@
   }
   
   .logo-link {
-    left: -100px;
+    left: -3px;
   }
 }
 
@@ -178,7 +208,7 @@
   }
   
   .logo-link {
-    left: -80px;
+    left: 0px;
   }
 }
 

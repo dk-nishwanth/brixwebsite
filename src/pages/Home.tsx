@@ -4,7 +4,6 @@ import SEO from '../components/SEO'
 import CinematicHero from '../components/CinematicHero'
 import EditorialAbout from '../components/EditorialAbout'
 import VisionMission from '../components/VisionMission'
-import ProjectsGrid from '../components/ProjectsGrid'
 import EditorialServices from '../components/EditorialServices'
 import HappyClients from '../components/HappyClients'
 import './Home.css'
@@ -24,7 +23,6 @@ const Home = () => {
       <EditorialAbout />
       <VisionMission />
       <EditorialServices />
-      <ProjectsGrid />
       <HappyClients />
 
       {/* Call to Action Section */}

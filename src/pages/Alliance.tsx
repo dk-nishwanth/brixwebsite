@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import ProjectsGrid from '../components/ProjectsGrid'
 import './Alliance.css'
 
 const Alliance = () => {
@@ -33,10 +34,10 @@ const Alliance = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="section-label">OUR ALLIANCES</span>
-            <h1 className="page-title">Strategic Partnerships</h1>
+            <span className="section-label">OUR PROGRAM</span>
+            <h1 className="page-title">Training Programs & Partnerships</h1>
             <p className="hero-description">
-              Our partners are more than alliances; they're gateways to limitless potential.
+              Comprehensive training programs and strategic partnerships designed to drive excellence and innovation.
             </p>
           </motion.div>
         </div>
@@ -52,12 +53,11 @@ const Alliance = () => {
             transition={{ duration: 0.8 }}
           >
             <p className="intro-text">
-              Experience the exponential growth as we combine forces to navigate the complexities of
-              today's market.
+              Experience comprehensive training programs and strategic partnerships that drive exponential growth and innovation.
             </p>
             <p className="intro-text">
-              Our strategic partnerships open doors to unparalleled opportunities, empowering businesses
-              to thrive in today's landscape.
+              Our programs and alliances open doors to unparalleled opportunities, empowering businesses
+              to thrive in today's competitive landscape.
             </p>
           </motion.div>
         </div>
@@ -88,6 +88,9 @@ const Alliance = () => {
           ))}
         </div>
       </section>
+
+      {/* Our Work Section */}
+      <ProjectsGrid />
 
       {/* CTA Section */}
       <section className="alliance-cta">

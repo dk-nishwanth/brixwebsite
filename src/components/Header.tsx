@@ -16,7 +16,7 @@ const Header = ({ scrolled }: HeaderProps) => {
     { label: 'Home', path: '/' },
     { label: 'About', path: '/about' },
     { label: 'Services', path: '/services' },
-    { label: 'Alliance', path: '/alliance' },
+    { label: 'Our Program', path: '/alliance' },
     { label: 'Career', path: '/career' },
     { label: 'Contact', path: '/contact' },
   ]
